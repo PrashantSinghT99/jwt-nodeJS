@@ -6,13 +6,12 @@
     "nodemon": "^2.0.22"
   },
   "scripts": {
-    "devStart":"nodemon server.js",
+    "devStart": "nodemon server.js",
     "start": "node server.js"
   },
   "name": "jwt-auth",
   "version": "1.0.0",
   "main": "server.js",
-  "devDependencies": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
