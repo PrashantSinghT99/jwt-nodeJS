@@ -7,6 +7,7 @@
   },
   "scripts": {
     "devStart": "nodemon server.js",
+    "devStartAuth":"nodemon authServer.js",
     "start": "node server.js"
   },
   "name": "jwt-auth",
