@@ -30,6 +30,13 @@ app.post('/login', (req, res) => {
     res.json({ accessToken: accessToken, refreshToken: refreshToken })
 })
 
+app.delete('/logout',(req,res)=>
+{
+    refreshTokenStorage=refreshTokenStorage.filter(token=>token!==req.body.token)
+    res.sendStatus(204)
+})
+
+
 function generateAccessToken(user) {
     return jwt.sign(user, process.env.SECRET_KEY, { expiresIn: '15s' })
 }
